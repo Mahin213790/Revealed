@@ -1,71 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="bn">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Mahin's Lifestyle</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abu Sayed Mahin | Links</title>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/templatemo-style.css" />
-<!--
-Verticard Template
-https://templatemo.com/tm-533-verticard
--->
+  <!-- Bengali Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Noto Sans Bengali', sans-serif;
+    }
+
+    body {
+      background: #f6f6f6;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      padding: 30px 18px;
+      text-align: center;
+    }
+
+    .profile img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 12px;
+    }
+
+    .profile h2 {
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+
+    .profile p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 26px;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px;
+      margin-bottom: 14px;
+      border: 2px dashed #999;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #111;
+      font-weight: 600;
+      background: #fff;
+      transition: all 0.25s ease;
+    }
+
+    .links a.active {
+      background: #111;
+      color: #fff;
+      border-color: #111;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
 </head>
-
 <body>
-  <div class="tm-page-container mx-auto">
-    <header class="tm-header text-center">
-      <h1 class="tm-title text-uppercase">Abu Sayed Mahin</h1>
-      <p class="tm-primary-color"><i>Let them say it and be busy slaying it</i></p>
-    </header>
 
-    <section class="tm-section">
-      <nav class="tm-nav">
-        <ul>
-          <li class="active">
-            <a href="index.html"><span class="tm-nav-deco"></span>Intro</a>
-          </li>
-          <li>
-            <a href="gallery.html"><span class="tm-nav-deco"></span>Gallery</a>
-          </li>
-          <li>
-            <a href="contact.html"><span class="tm-nav-deco"></span>Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="tm-content-container">
-        <figure class="mb-0">
-          <img src="img/img-1.jpg" alt="Image" class="img-fluid tm-img" />
-        </figure>
-        <div class="tm-content">
-          <h2 class="tm-page-title">Verticard Simple CSS Template</h2>
-          <p class="mb-4">
-            Curabitur ac est dapibus, ultricies diam non, vestibulum odio. Sed
-            ac nunc lacinia, maximus nisi non, efficitur lacus, Donec efficitur
-            at dui non molestie.
-          </p>
-          <p>
-            Mahin provide this site coding 100% free download. You can use it absolutely free for any website. Template re-distribution is NOT allowed on any kind of download website. Thank you.
-          </p>
-        </div>
-      </div>
-    </section>
+  <div class="container">
 
-    <footer>
-      <span>Copyright 2019 Simple Profile</span>
-      <span>designed by Mahin</span>
-    </footer>
+    <!-- PROFILE -->
+    <div class="profile">
+      <img src="https://img.sanishtech.com/u/55512ab4c69e0782236ad038ca3ec9af.jpg" alt="Profile">
+      <h2>আবু সাইদ মাহিন</h2>
+      <p>ইসলামী ছাত্রশিবির</p>
+    </div>
+
+    <!-- LINKS -->
+    <div class="links">
+      <a href="https://example.com" onclick="handleClick(event, this)">🌐 আমার ওয়েবসাইট</a>
+      <a href="https://t.me/HoLD_oN_ReLaX" onclick="handleClick(event, this)">📝 টেলিগ্রাম</a>
+      <a href="https://instagram.com" onclick="handleClick(event, this)">📷 ইনস্টাগ্রাম</a>
+      <a href="https://facebook.com/Mahin2.00000" onclick="handleClick(event, this)">📘 ফেসবুক</a>
+      <a href="https://wa.me/8801909848802" onclick="handleClick(event, this)">💬 হোয়াটসঅ্যাপ</a>
+      <a href="tel:+8801909848802" onclick="handleClick(event, this)">📞 কল করুন</a>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      © ২০২৫ মাহিন — সর্বস্বত্ব সংরক্ষিত
+    </div>
+
   </div>
-</body>
 
-</html>
-</body>
-
-</html>  <script>
+  <!-- SCRIPT -->
+  <script>
     function handleClick(event, element) {
       event.preventDefault();
 
